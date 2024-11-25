@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Headings and Paragraphs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #000;
+            padding: 0;
+            height: 100vh;
+        }
+        
+    .first-table {
+        max-width: 80%;
+        margin: 20px auto;
+        overflow-x: auto;
+    }
+    
+    .first-table-hover {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .first-table-hover td {
+        border: 1px solid #dddddd00;
+        padding: 80px; /* Padding for each cell */
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    .first-table-hover td h3 {
+        margin: 0;
+        font-size: 55px;
+        color: #ffffff;
+    }
+    
+    .first-table-hover td p {
+        margin: 10px 0 0;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+    }
+    
+    /* Default Row Colors */
+    .first-table-hover tr:nth-child(1),
+    .first-table-hover tr:nth-child(2),
+    .first-table-hover tr:nth-child(3),
+    .first-table-hover tr:nth-child(4),
+    .first-table-hover tr:nth-child(5),
+    .first-table-hover tr:nth-child(6),
+    .first-table-hover tr:nth-child(7){
+        background-color: #000000;
+    }
+    
+    /* Unique Hover Effects */
+    .first-table-hover tr:nth-child(1):hover {
+      background: url('music5.png');
+      background-size: cover;
+    }
+    
+    .first-table-hover tr:nth-child(2):hover {
+      background: url('music6.png');
+      background-size: cover;
+    }
+    
+    .first-table-hover tr:nth-child(3):hover {
+      background: url('music7.png');
+      background-size: cover;
+    }
+    
+    .first-table-hover tr:nth-child(4):hover {
+      background: url('music8.png');
+      background-size: cover;
+    }
+    
+    .first-table-hover tr:nth-child(5):hover {
+      background: url('https://sosimg.sgp1.cdn.digitaloceanspaces.com/artist-gallery/1039255_1700738080.webp');
+      background-size: cover;
+    }
+    
+    .first-table-hover tr:nth-child(6):hover {
+      background: url('https://images.filmibeat.com/img/2024/08/kingf-1722868410.jpg');
+      background-size: cover;
+    }
+    
+    .first-table-hover tr:nth-child(7):hover {
+      background: url('https://drishtimagazine.com/wp-content/uploads/2018/11/03.jpg');
+      background-size: cover;
+    }
+    
+
+
+    @media (max-width: 768px) {
+        .first-table {
+            max-width: 100%;
+            margin: 10px auto;
+            overflow-x: hidden;
+        }
+    
+        .first-table-hover {
+            display: block;
+            width: 100%;
+        }
+    
+        .first-table-hover tr {
+            display: block;
+            margin-bottom: 20px;
+        }
+    
+        .first-table-hover td {
+            display: block; 
+            padding: 30px; 
+            text-align: center; 
+        }
+    
+        .first-table-hover td h3 {
+            font-size: 28px;
+        }
+    
+        .first-table-hover td p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    
+        .first-table-hover tr:hover {
+            background-size: cover;
+            background-position: center; 
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+
+        .second-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff9900; 
+        }
+        
+        .second-table td {
+            border: 1px solid #000000;
+            padding: 120px;
+            vertical-align: top;
+            text-align: left;
+        }
+        
+        .second-table td h3 {
+            margin: 0;
+            font-size: 40px;
+            color: #ffffff;
+        }
+        
+        .second-table td p {
+            margin: 10px 0 0;
+            color: #cccccc;
+        }
+
+
+        .second-table {
+          max-width: 80%;
+          margin: 20px auto;
+          overflow-x: auto;
+          background-image: url('https://cms.getnomad.app/uploads/pexels_wendy_wei_1190297_d212e1d645.jpg');
+          background-size: cover; 
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 0px; 
+          border-radius: 10px; 
+      }
+      
+      .second-table-hover {
+          width: 100%;
+          border-collapse: collapse;
+          background-color: rgba(0, 0, 0, 0.8); 
+          border-radius: 10px;
+          overflow: hidden;
+      }
+
+      .second-table-hover .dateplace{
+        font-size: 60px;
+        max-width: 400px;
+        font-weight: bold;
+      }
+
+      .second-table-hover .artist{
+        font-size: 50px;
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+
+      .second-table-hover .artist sup{
+        font-size: 25px;
+        font-weight: lighter;
+        color: #797979;
+        text-transform: lowercase;
+      }      
+
+      .second-table-hover .sponsor{
+        font-size: 40px;
+        font-weight: lighter;
+      }
+
+      .second-table-hover .date{
+        font-size: 40px;
+        font-weight: lighter;
+      }
+
+
+
+      
+      .second-table-hover td {
+          border: 1px solid transparent;
+          padding: 10px;
+          text-align: left;
+          vertical-align: top;
+      }
+      
+      .second-table-hover td h3 {
+          margin: 0;
+          font-size: 20px;
+          color: #ffffff;
+      }
+      
+      .second-table-hover td p {
+          margin: 10px 0 0;
+          font-size: 16px;
+          color: #989898;
+      }
+      
+      .second-table-hover tr {
+          background-color: transparent;
+      }
+      
+      .second-table-hover tr:hover {
+          background-color: rgba(255, 255, 255, 0);
+      }
+      
+@media screen and (max-width: 768px) {
+    .second-table {
+        max-width: 100%;
+    }
+
+    .second-table-hover {
+        display: block;
+        border-radius: 0; 
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .second-table-hover tr {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .second-table-hover td {
+        padding: 20px; 
+        text-align: center; 
+        border-bottom: 1px solid #000000; 
+    }
+
+    .second-table-hover .dateplace {
+        font-size: 28px; 
+        max-width: 100%;
+    }
+
+    .second-table-hover .artist {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .second-table-hover .artist sup {
+        font-size: 14px;
+    }
+
+    .second-table-hover .sponsor,
+    .second-table-hover .date {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .second-table-hover td {
+        padding: 15px;
+    }
+
+    .second-table-hover tr {
+        display: flex;
+        flex-direction: column; 
+        margin-bottom: 10px; 
+        background-color: rgba(0, 0, 0, 0); 
+    }
+
+    .second-table-hover .dateplace {
+        font-size: 24px;
+    }
+
+    .second-table-hover .artist {
+        font-size: 20px;
+    }
+
+    .second-table-hover .artist sup {
+        font-size: 12px;
+    }
+
+    .second-table-hover .sponsor,
+    .second-table-hover .date {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    .third-table {
+        max-width: 80%;
+        margin: 20px auto;
+        overflow-x: auto;
+    }
+    
+    .third-table-hover {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .third-table-hover td {
+        border: 1px solid #dddddd00;
+        padding: 100px;
+        text-align: left;
+        vertical-align: top;
+    }
+    
+    .third-table-hover .hash{
+      font-size: 90px;
+    }
+
+    .third-table-hover .event{
+      font-size: 60px;
+    }
+    
+    .third-table-hover td h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+  }
+    
+    .third-table-hover td p {
+        margin: 10px 0 0;
+        max-width: 500px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+    
+    .third-table-hover tr:nth-child(1),
+    .third-table-hover tr:nth-child(2),
+    .third-table-hover tr:nth-child(3),
+    .third-table-hover tr:nth-child(4),
+    .third-table-hover tr:nth-child(5),
+    .third-table-hover tr:nth-child(6),
+    .third-table-hover tr:nth-child(7){
+        background-color: #000000;
+    }
+    .third-table-hover tr:nth-child(1):hover {
+        background: url('music1.png');
+        background-size: cover;
+    }
+    
+    .third-table-hover tr:nth-child(2):hover {
+      background: url('music2.png');
+      background-size: cover;
+    }
+    
+    .third-table-hover tr:nth-child(3):hover {
+      background: url('music3.png');
+      background-size: cover;
+    }
+    
+    .third-table-hover tr:nth-child(4):hover {
+      background: url('music4.png');
+      background-size: cover;
+    }
+
+
+
+@media screen and (max-width: 1024px) {
+    .third-table {
+        max-width: 100%; 
+        padding: 0;
+    }
+
+    .third-table-hover td {
+        padding: 60px; 
+    }
+
+    .third-table-hover .hash {
+        font-size: 70px; 
+    }
+
+    .third-table-hover .event {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .third-table {
+        max-width: 100%; 
+        margin: 10px auto; 
+        overflow-x: hidden; 
+    }
+
+    .third-table-hover {
+        display: block; /* Stack rows vertically */
+    }
+
+    .third-table-hover tr {
+        display: flex;
+        flex-direction: column; /* Stack cells vertically */
+        margin-bottom: 10px; /* Space between rows */
+        background-color: rgba(0, 0, 0, 0.9); /* Ensure row background remains visible */
+    }
+
+    .third-table-hover td {
+        padding: 30px; /* Further reduce padding */
+        text-align: center; /* Center-align text for better readability */
+        border: none; /* Remove borders for a cleaner look */
+    }
+
+    .third-table-hover .hash {
+        font-size: 50px; /* Adjust hash font size */
+    }
+
+    .third-table-hover .event {
+        font-size: 40px; /* Adjust event font size */
+    }
+
+    .third-table-hover td h3 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .third-table-hover td p {
+        font-size: 14px; /* Adjust paragraph size */
+        max-width: 100%; /* Ensure full-width text */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .third-table-hover td {
+        padding: 20px;
+    }
+
+    .third-table-hover .hash {
+        font-size: 40px; 
+    }
+
+    .third-table-hover .event {
+        font-size: 30px;
+    }
+
+    .third-table-hover td h3 {
+        font-size: 16px; 
+    }
+
+    .third-table-hover td p {
+        font-size: 12px; 
+        line-height: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+        
+.hero {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://static.vecteezy.com/system/resources/previews/007/546/192/non_2x/black-and-white-wavy-stripes-background-trendy-abstract-wave-texture-smooth-curved-lines-pattern-design-vector.jpg') no-repeat center center / cover; /* Add your striped image */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-text {
+    font-size: 50px; 
+    font-weight: 800;
+    max-width: 900px;
+    color: white;
+    mix-blend-mode: difference;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-text {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text {
+      font-size: 1.4rem;
+    }
+  }
+
+
+.about {
+    background-color: #000; 
+    color: #fff;
+    padding: 40px 20px; 
+    text-align: left; 
+  }
+  
+  .about-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 40px;
+    color: #353535;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  
+  .about-text {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin: 40px;
+  }
+  
+  .highlight {
+    text-decoration: underline;
+  }
+  
+  .highlight-link {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .highlight-link:hover {
+    color: #fff; 
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 1.8rem;
+    }
+  
+    .about-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  
+  .gallery {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .gallery img {
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .tagline {
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    padding: 0 15px;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+
+  .footer-links a:hover {
+    border-color: #fff;
+  }
+
+
+
+
+.first-table, .third-table {
+  cursor: none;
+  position: relative; 
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 100px; 
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.8); 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  pointer-events: none; 
+  transform: translate(-50%, -50%); 
+  z-index: 1000;
+}
+
+.cursor-play,.cursor-view {
+  background-color: rgba(0, 149, 255, 0);
+  border: 1px solid #fff;
+  color: white;
+}
+
+
+
+.buy-ticket-btn {
+  display: inline-block;
+  padding: 12px 120px;
+  margin-top: 10px; 
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.buy-ticket-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <p class="hero-text">
+          Founded in Mumbai by visionary artists, INDI VIBE is a dynamic platform dedicated to nurturing and showcasing the finest talents in Bollywood music and Indian rap.
+        </p>
+      </section>
+
+      <section class="about">
+        <h2 class="about-title">About Us</h2>
+        <p class="about-text">
+          Welcome to <span class="highlight">INDI VIBE</span> — the heartbeat of Bollywood music and Indian rap culture! Since 2010, we've been redefining the soundscape of India, bringing together the best of rhythm, rhyme, and raw energy. From electrifying concerts in packed arenas to chart-topping releases that dominate the airwaves, we celebrate the vibrant fusion of tradition and modern beats.  
+          Our journey has featured iconic performances by legends like  
+          <a href="#honey-singh" class="highlight-link">Yo Yo Honey Singh</a> and  
+          <a href="#badshah" class="highlight-link">Badshah</a>, while also giving a stage to rising stars like  
+          <a href="#divine" class="highlight-link">DIVINE</a> and  
+          <a href="#mc-stan" class="highlight-link">KR$NA</a>.  
+          
+          At INDI VIBE, we’re not just about music — we’re about moments. Moments that bring people together, fuel passion, and create memories. Join us as we continue to push the boundaries, hosting unforgettable events and showcasing talent that shapes the future of Bollywood and Indian rap.  
+        </p>
+      </section>
+      
+
+
+    <div class="first-table">
+        <table class="first-table-hover">
+            <tr>
+                <td>
+                    <h3>Rappers</h3>
+                    <p>Yo Yo Honey Singh <br> Badshah <br> Raftaar <br> DIVINE <br> KR$NA <br> Emiway Bantai</p>
+                </td>
+                <td>
+                    <h3>Desi Bounce by Yo Yo Honey Singh</h3>
+                    <p>15th October 2024 &nbsp;|&nbsp; 8:00 PM &nbsp;|&nbsp; Mumbai &nbsp;|&nbsp; Jio World Centre</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                    <p></p>
+                </td>
+                <td>
+                    <h3>Raftaar Nights by Raftaar</h3>
+                    <p>20th November 2024 &nbsp;|&nbsp; 9:30 PM &nbsp;|&nbsp; Delhi &nbsp;|&nbsp; India Gate Grounds</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h3></h3>
+                  <p></p>
+                </td>
+                <td>
+                    <h3>Bass Ka Baadshah by Badshah</h3>
+                    <p>3rd December 2024 &nbsp;|&nbsp; 7:00 PM &nbsp;|&nbsp; Bangalore &nbsp;|&nbsp; Phoenix Market City</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h3></h3>
+                  <p></p>
+                </td>
+                <td>
+                    <h3>Kalaakar Vibes by DIVINE</h3>
+                    <p>18th January 2025 &nbsp;|&nbsp; 6:00 PM &nbsp;|&nbsp; Hyderabad &nbsp;|&nbsp; Gachibowli Stadium</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Singers & Producers</h3>
+                    <p>Nucleya <br> Neha Kakkar</p>
+                </td>
+                <td>
+                    <h3>Nakhra Unlimited by Neha Kakkar</h3>
+                    <p>27th February 2025 &nbsp;|&nbsp; 8:00 PM &nbsp;|&nbsp; Pune &nbsp;|&nbsp; Balewadi Sports Complex</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h3></h3>
+                  <p></p>
+                </td>
+                <td>
+                    <h3>Monopoly Moves by KING</h3>
+                    <p>12th March 2025 &nbsp;|&nbsp; 7:30 PM &nbsp;|&nbsp; Jaipur &nbsp;|&nbsp; SMS Stadium</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <h3></h3>
+                  <p></p>
+                </td>
+                <td>
+                    <h3>Sunburn Beats by Nucleya</h3>
+                    <p>5th April 2025 &nbsp;|&nbsp; 9:00 PM &nbsp;|&nbsp; Goa &nbsp;|&nbsp; Vagator Beach</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="second-table">
+        <table class="second-table-hover">
+            <tr>
+                <td>
+                    <h3 class="dateplace">Urban Groove #25 - Mumbai</h3>
+                    <p>Presented by BeatNation Records</p>
+                </td>
+                <td>
+                    <p>Main Acts</p>
+                    <h3 class="artist">Yo Yo Honey Singh<sup>IN</sup></h3>
+                    <h3 class="artist">DIVINE<sup>IN</sup></h3>
+                    <h3 class="artist">Badshah<sup>IN</sup></h3>
+                    <h3 class="artist">Emiway Bantai<sup>IN</sup></h3>
+                    <h3 class="artist">KRSNA<sup>IN</sup></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                    <p></p>
+                </td>
+                <td>
+                    <P>Supporting Artists</P>
+                    <h3 class="artist">King<sup>IN</sup></h3>
+                    <h3 class="artist">Prabh Deep<sup>IN</sup></h3>
+                    <h3 class="artist">Seedhe Maut<sup>IN</sup></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3></h3>
+                    <p></p>
+                </td>
+                <td>
+                    <P>Sponsors</P>
+                    <h3 class="sponsor">SoundBlast Media</h3>
+                    <H3 class="sponsor">Pulse Energy Drinks</H3>
+                    <h3 class="sponsor">MixMaster Audio</h3>
+                </td>
+            </tr>
+            <tr>
+                
+              <td>
+                <h3 class="date">14th March 2025</h3>
+                <p>Dome NSCI, Worli, Mumbai</p>
+                <td>
+                  <button class="buy-ticket-btn">Buy Ticket</button>
+              </td>
+              
+        </table>
+    </div>
+
+    <br><br><br><br>
+    <div class="third-table">
+        <table class="third-table-hover">
+            <tr>
+                <td>
+                    <h3 class="hash">#1</h3>
+                </td>
+                <td>
+                    <p>20th February 2025</p>
+                    <h3 class="event">RAPture 2025</h3>
+                    <p>RAPture 2025 brings together the kings of Indian rap on one stage. Featuring performances by DIVINE, Badshah, and MC Stan, this mega-event promises electrifying beats and lyrical battles that will redefine the rap scene in India. Get ready to experience an unforgettable night of pure hip-hop energy!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="hash">#2</h3>
+                </td>
+                <td>
+                  <p>15th June 2025</p>
+                    <h3 class="event">BeatStorm Festival</h3>
+                    <p>India's biggest electronic dance music festival is back! BeatStorm Festival will feature top DJs, including Nucleya and international acts, with mind-blowing visuals and immersive soundscapes. This all-day beach event in Goa will set new standards for EDM extravaganzas.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="hash">#3</h3>
+                </td>
+                <td>
+                    <p>12th September 2025</p>
+                    <h3 class="event">Bollywood Nights Live</h3>
+                    <p>Bollywood Nights Live promises a star-studded evening with India's most loved playback singers, led by Neha Kakkar. Enjoy your favorite chart-toppers and timeless hits under the stars at Mumbai's Bandra Amphitheatre. A musical spectacle celebrating the heart of Bollywood!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="hash">#4</h3>
+                </td>
+                <td>
+                    <p>5th December 2025</p>
+                    <h3 class="event">GullyVerse 2025</h3>
+                    <p>Experience the raw power of India's underground rap culture at GullyVerse 2025. Hosted in Delhi, this event will feature street rappers, freestyle battles, and headliners like Emiway Bantai and King. Witness the evolution of gully rap live on stage!</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br><br><br>
+    <div class="gallery">
+        <img src="music10.png" alt="Gallery Image 1">
+      </div>
+    
+      <section class="about">
+        <p class="about-text">
+          Multi-genre record label and platform for Bollywood music and Indian rap artists. Founded in Mumbai by visionary creators. For more information, write to <u>info@indivibe.in</u>
+        </p>
+      </section>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Youtube</a>
+        <a href="#">Spotify</a>
+      </div>
+
+<br><br><br>
+
+      <script>
+// Select both tables
+const firstTable = document.querySelector('.first-table');
+const thirdTable = document.querySelector('.third-table');
+
+// Create custom cursors
+const playCursor = document.createElement('div');
+playCursor.classList.add('custom-cursor', 'cursor-play');
+playCursor.innerText = 'PLAY';
+document.body.appendChild(playCursor);
+
+const viewCursor = document.createElement('div');
+viewCursor.classList.add('custom-cursor', 'cursor-view');
+viewCursor.innerText = 'VIEW';
+document.body.appendChild(viewCursor);
+
+// Function to update the cursor's position
+function updateCursorPosition(event, cursor) {
+    cursor.style.left = `${event.pageX}px`;
+    cursor.style.top = `${event.pageY}px`;
+}
+
+// Event listeners for first-table
+firstTable.addEventListener('mousemove', (event) => {
+    playCursor.style.display = 'flex';
+    viewCursor.style.display = 'none';
+    updateCursorPosition(event, playCursor);
+});
+
+firstTable.addEventListener('mouseleave', () => {
+    playCursor.style.display = 'none';
+});
+
+// Event listeners for third-table
+thirdTable.addEventListener('mousemove', (event) => {
+    viewCursor.style.display = 'flex';
+    playCursor.style.display = 'none';
+    updateCursorPosition(event, viewCursor);
+});
+
+thirdTable.addEventListener('mouseleave', () => {
+    viewCursor.style.display = 'none';
+});
+
+      </script>
+</body>
+</html>
